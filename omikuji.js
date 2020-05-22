@@ -10,19 +10,22 @@ if (username == ""){
 document.getElementById("name").innerHTML = username;
 var rand = Math.floor( Math.random() * 5) ; 
  
-if (rand == 0) {
-	userresult = "大吉";
-}
-if (rand == 1) {
-	userresult = "中吉";
-}
-if (rand == 2) {
-	userresult = "小吉";
-}
-if (rand == 3) {
-	userresult = "吉";
-}
-if (rand == 4) {
-	userresult = "凶";
-}
+
+switch (rand){
+    case 0:
+        userresult = "大吉";
+        break;
+    case 1:
+        userresult = "中吉";
+        break;
+    case 2:
+        userresult = "小吉";
+        break;
+    case 3:
+        userresult = "吉";
+        break;
+    case 4:
+        userresult = "凶";
+        break;
+  }
 document.getElementById("result").innerHTML = userresult;
